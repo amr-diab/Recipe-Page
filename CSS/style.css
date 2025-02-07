@@ -1,0 +1,129 @@
+:root {
+    --Brown:hsl(14, 45%, 36%);
+    --light-Brown:hsl(30, 10%, 34%);
+    --Dark-Brown:hsl(24, 5%, 18%);
+    --Rose:hsl(332, 51%, 32%);
+    --light-Rose:hsl(330, 100%, 98%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Outfit", serif;
+}
+h1 {
+    color: var(--Brown);
+    font-family: "Young Serif", serif;
+    letter-spacing: 2px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 .5rem;
+}
+/* font-family: "Young Serif", serif; */
+
+/* Home Start */
+.home .container img {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+.home h1 {
+    font-weight: 40px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: var(--Dark-Brown);
+}
+.home p {
+    line-height: 1.5rem;
+    color: var(--light-Brown);
+}
+/* Home End */
+/* Preparation time Start  */
+.preparation-time .container {
+    background-color: var(--light-Rose);
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+}
+.preparation-time  h2 {
+    color: var(--Rose);
+    padding-bottom: 1.5rem;
+}
+.preparation-time ul , 
+.ingredients ul , 
+.instructions ol {
+    margin: 5px 0;
+    padding-left: 2rem;
+}
+.preparation-time ul li::marker {
+    color: var(--Rose);
+    font-weight: bold;
+}
+.preparation-time ul li , 
+.ingredients ul li ,
+.instructions ol li {
+    margin: 5px 0;
+    padding-left: 2.5rem;
+    line-height: 2rem;
+    color: var(--light-Brown);
+}
+.preparation-time  li strong {
+    font-weight: bold;
+    color: var(--Brown);
+}
+/* Preparation time End */
+/* Ingredients Start */
+.ingredients ul ,
+.instructions ol  {
+    margin-bottom: 2rem;
+}
+.ingredients ul li::marker {
+    color: var(--Dark-Brown);
+    font-weight: bold;
+}
+/* Ingredients End */
+/* Instructions Start */
+.instructions ol li::marker {
+    color: var(--Dark-Brown);
+    font-size: 22px;
+    font-weight: bold;
+}
+.instructions ol li strong {
+    color: var(--Dark-Brown);
+}
+/* Instructions End */
+/* Nutrition Start */
+.nutrition .primary-p {
+    color: var(--light-Brown);
+    padding-bottom: 1.7rem;
+}
+.nutrition .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+.nutrition .col-1 {
+    color: var(--light-Brown);
+    margin-bottom: 2rem;
+}
+.nutrition .col-1 p {
+    padding: 1rem 2rem;
+}
+.nutrition .col-2 {
+    color: var(--Brown);
+    margin-bottom: 2rem;
+}
+.nutrition .col-2 p {
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+/* Nutrition End */
